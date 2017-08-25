@@ -1,4 +1,5 @@
 googleApi.json
 subs.json
-**/node_modules
-**/type-is
+node_modules
+type-is
+.vscode
