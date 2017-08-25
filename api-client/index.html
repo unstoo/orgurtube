@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FrontEnd Master Express API</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.min.js" integrity="sha256-aXHOBRCjmgqoEhY6VBWs3Bc+E3447Iuywezt+nkgeZk=" crossorigin="anonymous"></script> -->
+    <script src="/dist/axios.js">  </script>
+    
+<style>
+      * {
+        box-sizing: border-box;        
+        font-size: 16px;
+      }
+      h1, h2 {
+        
+        font-size: 20px;
+        color: #444;
+        padding: 0
+      }
+      .fst {        
+        margin-right: 22px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      input, textarea {
+        width: 100%;
+        padding: 8px;
+      }
+      button {
+        width:100%;
+        font-size: 18px;
+      }
+      form {
+        display: flex;
+        
+        flex-wrap: wrap;
+        height: 108px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Frontend Masters Express API</h1>
+    <form>
+      <div class='fst'>
+        <input type="text"><br>
+        <textarea id="data" rows="" cols=""></textarea>
+      </div>
+      <div class='fst'>        
+        <button>GET</button>
+        <button>POST</button>
+        <button>PUT</button>
+        <button>DELETE</button>
+      </div>
+    </form>
+    <hr>
+    <h2>Response:</h2>
+    <code><pre id="response">
+      The response shows up here...
+    </pre></code>
+
+    <script>
+      const methodButtons = document.getElementsByTagName('button');
+      const responseField = document.getElementById('response');
+
+      [].forEach.call(methodButtons, button => {
+        button.addEventListener('click', event => {
+          event.preventDefault();
+          const args = [];
+
+          const method = event.target.innerHTML.trim().toLowerCase();
+
+          const api = document.getElementsByTagName('input')[0].value.trim();  
+          args.push('http://localhost:3000/' + api); 
+
+          const data = document.getElementById('data').value.trim();
+          if (data) args.push(JSON.parse(data));
+
+          axios[method](...args)
+          .then(response => responseField.innerHTML = JSON.stringify(response.data, null, 2))
+          .catch(err => responseField.innerHTML = JSON.stringify(err.response, null, 2))
+        })
+      })
+    </script>
+  </body>
+</html>

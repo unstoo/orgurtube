@@ -1,0 +1,28 @@
+.Groups {
+  height: 90vh;  
+	overflow-y: auto;	
+	padding-right: 6px;
+}
+
+.Groups header {
+	display: flex;
+}
+
+.Groups ::-webkit-scrollbar-track
+{
+	background-color: rgba(200,200,200,1);  
+	width: 6px;
+}
+
+.Groups ::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: rgba(200,200,200,1);
+}
+
+.Groups ::-webkit-scrollbar-thumb
+{
+	background-color: rgba(200,200,200,.7);
+  
+	width: 6px;
+}

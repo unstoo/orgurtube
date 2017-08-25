@@ -1,0 +1,35 @@
+.Header  {
+  background: white;
+  padding-bottom: 2px;
+  height: 38px;
+  position: fixed;
+  z-index: 99999;
+  left: 0;
+  right: 0;
+
+}
+
+.Header h1 { 
+  display: none; 
+  font-size: 12px;
+}
+
+
+.Header nav {
+  margin: 0 auto;
+  width: 50vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Header nav a {
+  color: #57694a;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.Header_heightfiller {
+  position: relative;
+  height: 38px;
+}

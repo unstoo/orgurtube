@@ -1,0 +1,10 @@
+.Feeds {
+  margin: 0 32px;
+  background: rgba(222, 231, 225, 0.81);  
+  margin-bottom: 28px;
+  padding-bottom: 18px;
+}
+
+.Feeds_overflow {
+  overflow-y: scroll;
+}

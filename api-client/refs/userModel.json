@@ -1,0 +1,24 @@
+{
+
+  "youTubeId": {
+    "access_token" : "",
+    "refresh_token": "",
+    "channels": {
+
+      "channelId": {
+        "title" : "",
+        "description": "",
+        "thumb": "",
+        "groupId": ""
+      }
+
+    },
+    "groups": {
+      "groupId": {
+        "name": ""
+      }
+    }
+  }
+
+
+}

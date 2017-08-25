@@ -1,0 +1,13 @@
+
+.Groupitem {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+
+.Groupitem span {
+  flex-grow: 1;
+  padding-left: 6px;
+}

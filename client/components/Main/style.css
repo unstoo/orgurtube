@@ -1,0 +1,26 @@
+.Main {
+  display: flex;
+  background: rgba(222, 231, 225, 0.81);
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 8px;
+  max-width: 800px;
+}
+
+.Main  section:nth-child(1) {
+  margin-left: 6px;
+}
+.Main  section:nth-child(2) {
+  margin-right: 6px;
+  margin-left: 6px;
+  min-width: 126px; 
+}
+
+section > header h2 {
+  font-weight: 400;
+  padding: 4px;
+  color: red;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding-bottom: 6px;
+}

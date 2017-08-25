@@ -1,0 +1,40 @@
+.FeedsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 6px;
+}
+
+.FeedsList--item img {  
+  border-radius: 0;
+  width: 196px;
+  height: 110px;
+}
+
+.FeedsList--item {
+  width: 196px;
+  margin-bottom: 6px;
+  margin-right: 6px;  
+  font-size: 15px;
+  color: #61696E;
+  background: rgba(255, 255, 255, 0.46);
+}
+
+.FeedsList--item h3 {
+  font-size: 16px;  
+  color: #167ac6;
+}
+
+.FeedsList--item a {  
+  text-decoration: none;
+}
+
+.FeedsList--item > div {
+  padding: 0 4px;
+}
+
+.FeedsList--item .metadata {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}

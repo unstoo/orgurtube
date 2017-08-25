@@ -1,0 +1,28 @@
+.GroupsPane {
+  background: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  margin-top: 38px;
+  border-top: 1px solid #e8e8e8;
+  padding-top: 12px;
+  width: 152px;  
+  overflow-y: auto;
+}
+
+.GroupPaneItem {
+    
+  margin-left: 8px;
+  margin-right: 8px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.GroupsPane::-webkit-scrollbar-thumb
+{
+	background-color: rgba(192, 180, 168, 0.72);  
+	width: 6px;
+}
+

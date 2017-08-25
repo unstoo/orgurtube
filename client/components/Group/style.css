@@ -1,0 +1,38 @@
+.Group {
+  background: white;
+  flex-grow: 1;
+  min-height: 88px;
+  position: relative;
+  margin-bottom: 6px;
+}
+
+.Group h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.Group header {
+  display: flex;
+  height: 100%;
+  padding-left: 6px;
+}
+
+.Group header h3 {
+  flex-basis: 76%;
+}
+
+.Group header div {  
+  flex-basis: 24%;
+  display: flex;
+}
+
+.Group header div button {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.GorupList__overview {
+  display: none;
+}

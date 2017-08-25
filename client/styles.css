@@ -1,0 +1,82 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  min-width: 320px;
+  background: #ffbe7e;
+  /* background: -webkit-linear-gradient(to right, #E6E9EC, #ECE9E6);   Chrome 10-25, Safari 5.1-6  */
+  /* background: linear-gradient(to right, #E6E9EC, #ECE9E6);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+  */
+}
+
+h1,h2,h3 {
+ margin: 0;
+ padding: 0;
+}
+
+.visuallyhidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+footer {
+  text-align: center;
+  color: grey;
+  font-size: 16px;
+}
+
+img {
+  width: 60px;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  border: solid 1px silver;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background: #EEE;
+}
+
+::-webkit-scrollbar-track
+{
+	background-color: rgba(255, 255, 255, 0.00);  
+	width: 6px;
+}
+
+::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: rgba(0,0,0,0);
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: rgba(255, 255, 255, 0.50);
+  
+	width: 6px;
+}

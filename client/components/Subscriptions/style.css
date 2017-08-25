@@ -1,0 +1,12 @@
+.Subscriptions {
+  height: 90vh;
+  overflow-y: auto;
+  min-width: 194px;
+  padding-right: 6px;
+  
+}
+.Subscriptions > ul {
+  padding-right: 0px;
+  display: flex;
+  flex-direction: column;
+}
